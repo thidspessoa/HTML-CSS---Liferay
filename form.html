@@ -1,6 +1,26 @@
-<form 
-    action="https://formspree.io/f/xbjbrlva" 
-    method="post"
->
+<h1>Formulário de comunicação</h1>
+<form  action="https://formspree.io/f/xbjbrlva"  method="post">
+  
+    <p>
+        <label for="Campo de nome">Digite seu nome</label><br>
+        <input placeholder="Digite um nome..." type="text" required="required"
+        id="Campo de mensagem">
+    </p>
+    <p>
+        <label for="Campo de mensagem">Digite sua mensagem</label><br>
+        <textarea  name="Mensagem" id="Campo de mensagem" required cols="60"
+        rows="10" placeholder="Digite aqui..."></textarea>
+    </p>
+    <p>
+        <b>Como chegou até aqui?</b>
+        <ul>
+            <li><input value="Linkedin" name="Linkedin" type="">Linkedin</li>
+            <li><input value="Redes Sociais" type="radio" name="RedesSociais">Redes Sociais</li>
+            <li><input value="Indicações" name="Indicações" type="radio">Indicações</li>
+        </ul>
+        <input value="SIM" name="TermosDeUso" type="checkbox">
+        Eu aceito os termos de uso de cookies
+    </p>
+    <button type="submit">Enviar</button>
 
 </form>
