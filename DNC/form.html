@@ -1,0 +1,69 @@
+<h1>Formulário de comunicação</h1>
+<form  action="https://formspree.io/f/xbjbrlva"  method="post">
+  
+        <p>
+            <label for="Campo de nome"><b>Digite seu nome</b></label><br>
+            <input placeholder="Digite um nome..." type="text" required="required"
+            id="Campo de mensagem">
+        </p>
+        <p>
+            <label for="SegmentoDaMensagem"><b>Escolha o tipo de assunto:</b></label><br>
+            <input list="Assunto" id="SegmentoDaMensagem" name="SegmentoDaMensagem">
+            
+            <datalist id="Assunto">
+                <option value="Proposta-Empresa"></option>
+                <option value="Proposta-FreeLancer"></option>
+                <option value="Produto-PJ"></option>
+                <option value="Serviço-PF"></option>
+            </datalist><br>
+        </p>
+        <p>
+            <label for="Campo de mensagem"><b>Digite sua mensagem</b></label><br>
+            <textarea  name="Mensagem" id="Campo de mensagem" required cols="60"
+            rows="10" placeholder="Digite aqui..."></textarea>
+        </p>
+        <p>
+            <label for="Linkedin"><b>Como chegou até aqui?</b></label>
+            <ul>
+                <li><input checked value="Linkedin" name="Linkedin" type="checkbox">Linkedin</li>
+                <li><input value="Redes Sociais" name="RedesSociais" type="checkbox">Redes Sociais</li>
+                <li><input value="Indicações" name="Indicações" type="checkbox">Indicações</li>
+            </ul>
+        </p>
+        <p>
+            <label for="Cidade"><b>Sua Cidade</b></label>
+            <select id="cidade">
+            
+                <!--Tag filha-->
+                <option selected value="RE">Recife</option>
+                <option value="OL">Olinda</option>
+                <option value="PA">Paulista</option>
+            </select> 
+        </p>
+    <fieldset>
+        <legend><b>Pesquisa ciêntifica:</b></legend>
+        <p>
+            <label for="Nota"><b>De 1 a 5, qual nota você daria a este curriculum?</b></label>
+            <ul>
+                <li>
+                    <input value="1" name="Nota" type="radio"> 1
+                    <input value="2" name="Nota" type="radio"> 2
+                    <input value="3" name="Nota" type="radio"> 3
+                    <input value="4" name="Nota" type="radio"> 4
+                    <input value="5" name="Nota" type="radio"> 5
+                </li>
+            </ul>
+        </p>
+        <p>
+            <label for="Melhoria">Em que poderia melhorar?</label><br>
+            <textarea name="OquePodeMelhorar" id="Melhoria" cols="20"
+            rows="10" placeholder="Digite aqui..."></textarea>
+        </p>
+        <p>
+            <input value="SIM" name="TermosDeUso" type="checkbox" required>
+            <b>Eu aceito os termos de uso de cookies</b>
+        </p>
+        <button type="submit">Enviar</button>
+    </fieldset>
+
+</form>
