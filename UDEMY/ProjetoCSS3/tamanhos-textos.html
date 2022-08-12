@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Tamanho de fontes e textos</title>
+
+		<meta charset="utf-8">
+
+		<style type="text/css">
+
+			div {
+				font-size: 60px;
+			}
+
+			.paragrafo {
+				
+				/*
+				p -> tamanho fixo
+				% -> tamanho relativo ao padrão adotado pelos browsers
+				me -> tamanho relativo ao container pai ou seja, ao elemento
+				que ela esta dentro.
+				*/
+				/*font-size: 200%;*/
+				/*Tamanho padrão é 16px*/
+				font-size: 1em;
+			}
+
+			.paragrafo3 {
+				font-size: 2em;
+				/*O dobro do valor da tag pai*/
+				/*Vocẽ também pode utilizar "1.5 em"*/
+			}
+
+			.paragrafo2 {
+				font-size: 15px;
+				/*A preferencia é sempre da tag filho, para depois aplicar a tag 
+				pai*/
+			}
+
+			/*Serve para definir um tamanho padrão de fontes para o site e
+			definir que as tags sigam atraves do EM atributo. Depois você podera
+			alterar somente em um unico lugar, e todas as formatações de textos
+			vão se manter proporcionais*/
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div>
+			<p class="paragrafo">Jose 1<b>baduque</b></p>
+			<p class="paragrafo2">Jose 2<b>baduque</b></p>
+			<p class="paragrafo3">Jose 3<b>baduque</b></p>
+		</div>
+
+	</body>
+</html>
