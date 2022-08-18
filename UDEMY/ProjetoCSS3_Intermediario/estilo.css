@@ -1,0 +1,54 @@
+/*
+Modelo de caixa
+*/
+
+
+.Conteudo {
+    border: 1px solid red;
+    /*padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;*/
+
+   /*padding: 20px 15px 10px 5px;
+    Sentido horário, (cima, direita, baixo, esquerda...)*/
+    /*padding: 20px;
+    aplica a todos os lados*/
+
+    padding: 20px 30px;
+    /*Cima, baixo e laterais*/
+
+    /*
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    */
+
+    margin: 10px;
+
+    width: 150px;
+}
+
+/* Border colaps
+quando se tem dois blocos de elementos juntos as margens se sobrepõem, sempre a maior vai se sobressair.*/
+
+.Conteudo2 {
+    border: 1px solid red;
+    margin: 5px;
+    width: 150px;
+}
+
+/*
+Noticia
+*/
+
+#Noticia {
+    background: #f9f9f9;
+    border: 1px gray solid;
+    padding: 10px;
+}
+
+h2 {
+   margin: 0px; 
+}
