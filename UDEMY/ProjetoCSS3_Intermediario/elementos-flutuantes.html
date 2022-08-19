@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Elementos Flutuantes</title>
+
+		<meta charset="utf-8">
+
+        <style type="text/css">
+
+            #Principal {
+                border: 1px solid red;
+            }
+
+            .elementos {
+                background-color: cornflowerblue;
+                border: 1px solid gray;
+                width: 150px;
+                height: 150px;
+                float: right;
+                margin: 10px;
+            }
+
+            /*.elementos1 {
+                background-color: aquamarine;
+                border: 1px solid gray;
+                width: 150px;
+                height: 150px;
+                float: left;
+            Para os outros elementos é como se o Contéudo 1 não existisse,
+            já que estão em fluxos diferentes.
+            }*/
+
+            .clear {
+                clear: both;
+                /*BOTH limpa o fluxo em ambos os lados*/
+            }
+
+
+        </style>
+
+	</head>
+
+	<body>
+
+        <div id="Principal">
+            <div class="elementos">
+                Contéudo 1
+            </div>
+
+            <div class="elementos">
+                Contéudo 2
+            </div>
+
+            <div class="elementos" >
+                Contéudo 3
+            </div>
+
+            <div class="elementos">
+                Contéudo 4
+            </div>
+            
+            <div class="clear"></div>
+        </div>
+
+        <div>
+
+        </div>
+
+	</body>
+
+</html>
