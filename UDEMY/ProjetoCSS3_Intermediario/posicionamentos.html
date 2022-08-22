@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Posicionamento: Relative e Static </title>
+
+		<meta charset="utf-8">
+
+        <style type="text/css">
+
+            body {
+                background-color: #2722B5;
+            }
+
+            p {
+                width: 170px;
+                
+            }
+
+            h1 {
+                position: static;
+                /* Os elementos vem por padrão com o valor static
+                Este valor define que o elemento ficará estatico,
+                em sua posição padrão mesmo se você agregar
+                um valor a ele*/
+            }
+
+            .container {
+                background-color: aliceblue;
+                width: 800px;
+                padding: 10px;
+
+                /* Para posicionar as lateiras, é recomendado
+                que você utilize o auto*/
+                margin: 30px auto;
+
+            }
+
+            .relative {
+                position: relative;
+                /* PROPIEDADES DE DESLOCAMENTO
+                Left, top, bottom, right*/
+
+                /* Ele irá se mover 10px apartir da esquerda, indo para a direita. 
+                Pois é como se você inserisse o espaço 
+            .teste {
+                position: relative;
+                left: 80px;
+            }ao lado esquerdo do elemento,
+                empurrando ele para a direção contrária.*/
+                left: 250px;
+                
+                /* Se o valor for negativo, ele irá para o lado contrario.*/
+                top: -286px;
+                border: 1px red solid;
+            }
+           
+
+        </style>
+
+	</head>
+
+	<body>
+
+        <div class="container">
+            <h1>Posicionamento</h1>
+
+            <p> P1
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+            </p>
+
+            <p class="relative"> P2
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+            </p>
+
+            <p> P3
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+            </p>
+
+        </div>
+
+	</body>
+
+</html>
