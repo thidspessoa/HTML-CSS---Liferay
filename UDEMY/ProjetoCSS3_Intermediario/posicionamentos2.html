@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Posicionamento: Absoluto e fixo </title>
+
+		<meta charset="utf-8">
+
+        <style type="text/css">
+
+            body {
+                background-color: #2722B5;
+            }
+
+            p {
+                width: 170px;
+                
+            }
+
+            h1 {
+                position: static;
+                /* Os elementos vem por padrão com o valor static
+                Este valor define que o elemento ficará estatico,
+                em sua posição padrão mesmo se você agregar
+                um valor a ele*/
+            }
+
+            .container {
+                background-color: aliceblue;
+                width: 800px;
+                padding: 10px;
+
+                /* Para posicionar as lateiras, é recomendado
+                que você utilize o auto*/
+                margin: 30px auto;
+
+            }
+
+            .absolute {
+                position: absolute;
+                /*Esse valor define que o elemento tera sua posição
+                alterada de acordo com a posição padrão do conteiner
+                ou seja, se colocar "left: 80px;" ele ficara 80 pixels
+                a esquerda do container, isso caso o container tenha uma
+                posiition. Caso o container não tenha uma position, o 
+                valor será baseado na posição do boddy, que nesse caso é
+                o padrão static. Outro detalhe sobre o absolute é que ele
+                acompanha a rolagem da página, (se a pagina descer, ele desapaerece).
+                Este valor é removido do fluxo padrão do documento, 
+                sua posição é de acordo com a posição do container 
+                que está e ele cria um contexto de empilhamento, ou seja
+                ele pode sobrepor outros elementos na página.*/
+                right: 80px;
+                top: -10px;
+                background-color: aquamarine;
+                width: 280px;
+                padding: 10px auto;
+            }
+
+            .fixed {
+                position: fixed;
+                /* Esse valor define que o elemento sai do fluxo
+                normal do documento. O elemento não acompanha a barra de
+                rolagem da tela, ou seja, ele irá ficar fixo na tela
+                independente da onde o usuario role, e também pode sobrepor.
+                Sua posição é definida de acordo com a tela do seu site.*/
+                left: 10px;
+                width: 280px;
+                padding: 10px;
+                margin: 0px;
+                background-color: aqua;
+                border: 1px solid red;
+            }
+           
+
+        </style>
+
+	</head>
+
+	<body>
+
+        <div class="container">
+            <h1>Posicionamento</h1>
+
+            <p> P1
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+            </p>
+
+            <p class="absolute"> P2
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+            </p>
+
+            <p class="fixed"> P3
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+            </p>
+
+            <p> P3
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+            </p>
+
+            <p> P3
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+            </p>
+
+            <p> P3
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+                HOME HOME HOME HOME HOME HOME HOME 
+            </p>
+
+        </div>
+
+	</body>
+
+</html>
