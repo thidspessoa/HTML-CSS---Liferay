@@ -1,0 +1,57 @@
+/************************ SELETOR UNIVERSAL ************************/
+
+/*
+ * {
+    border: 1px solid red;
+}
+ */
+
+/*** Este seletor aplica caracteristicas a toda a pagina ***/
+
+
+/************************ SELETOR DE TEXTO  ************************/
+
+/*
+p {
+    border: 1px solid red;
+    color: brown;
+}
+*/
+
+/*** Este seletor seleciona elementos especificos do site, podendo
+definir caracteristicas a eles. ***/
+
+
+/************************ SELETOR DE CLASSE ************************/
+
+/*
+.verde {
+    color: green;
+}
+*/
+/*** cria uma classe podendo adicionar varias propiedades a
+uma ou mais tags da pagina. ***/
+
+/*
+p.verde {
+    color: green;
+}
+*/
+
+/*** Esta classe tem o mesmo principio, porem, ela define
+uma tag especifica aonde somente nesta tag esta classe ira funcionar
+ou seja, mesmo que você utilize a classe acima em varias tags, 
+as propiedades definidas so serão aplicadas nas tags <p> ***/
+
+
+/************************ SELETOR DE ID ************************/
+
+/*
+#verde {
+    color: green;
+}
+*/
+
+/*** cria um id, que contem caracteristicas e propiedades que
+podem ser aplicadas a uma determinada TAG da sua pagina, podendo
+ser utilizado apenas uma vez. ***/
