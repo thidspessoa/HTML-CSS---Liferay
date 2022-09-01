@@ -55,3 +55,67 @@ as propiedades definidas so serão aplicadas nas tags <p> ***/
 /*** cria um id, que contem caracteristicas e propiedades que
 podem ser aplicadas a uma determinada TAG da sua pagina, podendo
 ser utilizado apenas uma vez. ***/
+
+
+/************************ SELETOR DE FILHO ************************/
+
+/*
+li>a {
+    color: green;
+}
+*/
+
+/*** Cria caracteristicas para um elemento que é filho direto de outro.
+No exemplo acima, temos: li maior que a,isso deve ser lido da seguinte forma:
+o elemento a que é filho do elemento li, a leitura sempre deve iniciar do final, sendo o 
+ultimo seletor a tag filho. ***/
+
+
+/************************ SELETOR DE DESCENDENTE ************************/
+
+/*
+div a {
+    color: green;
+}
+*/
+
+/*** Adiciona caracteristicas a todos os elementos descendentes especificados, dentro do elemento pai
+que foi colocado. No exemplo acima, temos uma cor adicionada a todos os links que sejam descendentes da
+div ***/
+
+
+/************************ SELETOR DE IRMÃO ADJACENTE ************************/
+
+/*
+span+p {
+    color: green;
+}
+*/
+
+/*** Adiciona caracteristicas a um elemento irmão adjacente de outro. Ou seja, o elemento
+posterior mais proximo de outro. No exemplo acima, dizemos que o irmão adjacente de span é o primeiro
+paragrafo posterior a ele. ***/
+
+
+/************************ SELETOR DE IRMÃO GERAL ************************/
+
+span~p {
+    color: green;
+}
+
+/*** Semelhante ao seletor acima, este seletor seleciona o irmão geral de um determinado elemento.
+Ou seja, todos os elementos iguais que forem irmãos de um determinado outro elemento e estiverem
+dentro de um mesmo elemento pai. 
+No exemplo acima, definimos que queremos aplicar uma propiedade a todos os paragrafos que forem 
+irmãos de span, ou seja, todos os paragrafos que estiverme no mesmo elemento pai de span e que vinherem
+apos ele. ***/
+
+
+
+/****
+COMO REMOVER BOLINHAS DE UMA LISTA NÃO ORDENADA
+***/
+
+#estiloLista {
+    list-style-type: none;
+}
