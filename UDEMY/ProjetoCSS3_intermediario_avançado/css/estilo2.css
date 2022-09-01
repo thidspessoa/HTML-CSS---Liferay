@@ -1,0 +1,100 @@
+/************** HERANÇA E ESPECIFICIDADE **************/
+
+/*
+body {
+    color: brown;
+    background-color: beige;
+    border: 1px solid red;
+}
+*/
+
+/* Aplicando uma cor no body, toodos os elementos que estiverem dentro
+de body irão herdar essa caracteristica. Por padrão as caracteristicas
+border e background, não são herdados pelos outros elementos dentro de body,
+isso porque essas duas caracteristicas por padrão, não são herdaveis
+dentro de um elmento pai especifico. Pois não faria sentido.*/
+
+/*
+* {
+    border: 1px solid red;
+}
+*/
+
+/* Agora, utilizando essas mesmas caracteristicas em um seletor universal, 
+todos os elementos da pagina terão as caracteristicas aplicadas. Pois 
+a excessão de herança dessas caracteristicas, é justamente em um seletor
+universal mais geral. */
+
+
+
+/************* ESPECIFICIDADE ***************/
+
+/*
+#pagina p {
+    color: brown;
+}
+
+#pagina p {
+    color: brown;
+}
+*/
+
+/** Seletores iguais, o ultimo seletor sempre 
+será aplicado. Exceto caso você defina uma 
+valor chamado "!important" apos o valor da 
+propiedade. Ai nesse caso, você estará dizendo
+que o seletor com este valor, é mais importante que
+os demais, e deve ser aplicado primeioro. **/
+
+/*
+#pagina p {
+    color: green !important;
+}
+
+#pagina p {
+    color: brown;
+}
+*/
+
+/** O recomendado é que você não repita muito este valor no
+seu CSS, e tente sempre resolver essas questões sem o important.**/
+
+
+/** A regra da especificidade nos ajuda a saber quais propiedades
+CSS são aplicadas em nossa página. Basicamente, esta regra
+nos diz que a medida que um seletor for mais especifico, ele irá
+aplicar primeiro suas caracteristicas ao determinado elemento
+referenciado. Isso significa dizer que, seletores especificos 
+que referenciam tags unicas, sempre tem prioridade de aplicação 
+na sua pagina, veja o exemplo abaixo: **/
+
+
+* {
+    color: brown;
+}
+
+h1 {/*3*/
+    color: blue;
+}
+
+h1.class {/*2*/
+    color: green;
+}
+
+h1#id {/*1*/
+    color: chocolate;
+}
+
+
+/* Perceba que tem uma precedencia sendo seguida no exemplo, 
+que está definindo quais regras serão aplicadas primeiro na pagina.
+Uma curiosidade seria que no seletor de classes e id, não se da espaço
+após referenciar a tag, pois assim dessa forma estariamos dizendo que queremos
+aplicar alguma regra de CSS a o elemento com nome apos o espaço, dentro
+da tag referenciada antes do espaço, exemplo:
+
+h1 #class {
+
+}
+*/
+

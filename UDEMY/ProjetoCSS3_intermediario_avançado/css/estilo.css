@@ -57,6 +57,7 @@ podem ser aplicadas a uma determinada TAG da sua pagina, podendo
 ser utilizado apenas uma vez. ***/
 
 
+<<<<<<< HEAD
 /************************ SELETOR DE FILHO ************************/
 
 /*
@@ -119,3 +120,6 @@ COMO REMOVER BOLINHAS DE UMA LISTA NÃO ORDENADA
 #estiloLista {
     list-style-type: none;
 }
+=======
+
+>>>>>>> 215ec5b (atualizado)
