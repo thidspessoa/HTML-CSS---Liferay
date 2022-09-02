@@ -1,0 +1,39 @@
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+ul a {
+	/*border: 1px solid red;*/
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-indent: 40px;
+	line-height: 40px;
+	background:url(../assets/menu.png)  no-repeat left  bottom;
+}
+
+/************* METODO SIMPLES **************/
+
+/*
+a:hover, .selecionado a {
+	background-position: right bottom;
+	color: #fff;
+}
+*/
+
+/*** Perceba que criamos uma formatação para o estado hover,
+utilizando uma class, formatando o link dentro da lista. ***/
+
+
+
+/************* METODO COMPLEXO **************/
+
+/*** Utilizando seletores para selecioanar as paginas de 
+forma automatica, sem ter de inserir a classe em cada 
+pagina utilizada, deixando que o propio CSS faça esse
+trabalho. ***/
+
+#home

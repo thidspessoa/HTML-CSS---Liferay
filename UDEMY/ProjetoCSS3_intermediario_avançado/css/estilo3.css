@@ -1,0 +1,68 @@
+/******** FORMATAÇÃO DE LISTAS *********/
+
+/*
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+*/
+
+    /** No exemplo acima configuramos a lista, 
+    removendo os simobolos que ficam no começo dela do lado esquerdo
+    e removemos os espaçamentos padrão. **/
+
+
+/*
+li {
+    border: 1px solid red;
+    padding:5px 20px;
+    width: 400px;
+    background: url(../assets/seta.png) no-repeat left center;
+}
+*/
+
+    /** Na propiedade background, perceba que no caminho
+    da imagem existem "..", esses pontos fazem o caminho voltar
+    para a pasta geral aonde tem as outras pastas, inclusive a
+    pasta assets. Esse caminho é necessário pois é preciso
+    referencia desta forma sempre que o arquivo referenciado
+    estiver fora da pasta atual do documento.  **/
+
+
+
+/************* BARRA DE NAVEGAÇÃO VERTICAL ****************/
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+ul a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: #f7b600 url(../assets/menu.png) no-repeat left bottom;
+
+    /* TEXT IDENT= Da uma identação no texto, movendo ele para o lado direito. */
+
+    /* LINE-HEIGHT= De acordo com o tamanho da fonte, vamos
+    almentando o texto. o valor que você atribuir a essa propriedade irá
+    definir a altura total do bloco (se for um elemento do tipo block),
+    sendo assim o texto ficará centralizado  */
+
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+a:hover {
+    background-position: right bottom;
+    color: white;
+    background-color: #f99200;
+}
