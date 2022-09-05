@@ -43,13 +43,13 @@
                 alterada de acordo com a posição padrão do conteiner
                 ou seja, se colocar "left: 80px;" ele ficara 80 pixels
                 a esquerda do container, isso caso o container tenha uma
-                posiition. Caso o container não tenha uma position, o 
+                posiition diferente de static. Caso o container não tenha uma position, o 
                 valor será baseado na posição do boddy, que nesse caso é
-                o padrão static. Outro detalhe sobre o absolute é que ele
+                por padrão static. Outro detalhe sobre o absolute é que ele
                 acompanha a rolagem da página, (se a pagina descer, ele desapaerece).
                 Este valor é removido do fluxo padrão do documento, 
-                sua posição é de acordo com a posição do container 
-                que está e ele cria um contexto de empilhamento, ou seja
+                sua posição é de acordo com a posição do elemento ancestral mais proximo
+                e ele cria um contexto de empilhamento, ou seja
                 ele pode sobrepor outros elementos na página.*/
                 right: 80px;
                 top: -10px;
