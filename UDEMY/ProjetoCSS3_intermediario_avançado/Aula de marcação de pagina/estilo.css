@@ -12,7 +12,7 @@ ul a {
 	text-decoration: none;
 	text-indent: 40px;
 	line-height: 40px;
-	background:url(../assets/menu.png)  no-repeat left  bottom;
+	background:url(assets/menu.png)  no-repeat left  bottom;
 }
 
 /************* METODO SIMPLES **************/
@@ -36,4 +36,20 @@ forma automatica, sem ter de inserir a classe em cada
 pagina utilizada, deixando que o propio CSS faça esse
 trabalho. ***/
 
-#home
+#home #navegação-lateral .home a,
+#noticias #navegação-lateral .noticias a,
+#servicos #navegação-lateral .servicos a {
+	background-position: right bottom;
+	background-color: #f99200;
+	/** Pro caso da imagem nao ser carregada**/
+	color: #fff;
+	font-weight: bold;
+}
+
+/*** basicamente utilizamos um id para cada pagina que criamos, e 
+uma classe para cada item da lista. Sendo assim, o propio CSS faz o trabalho
+de decidir quando ele deve marcar a pagina. Ou seja,
+cada vez que a pessoa estiver na pagina home por exemplo, o CSS
+ira chamar o link que esta dentro do item da lista com a tag home.
+Perceba que neste caso, nos definimos uma formatação padrão para
+o estado padrão do link, não o estado especifico como o metodo simples. ***/
