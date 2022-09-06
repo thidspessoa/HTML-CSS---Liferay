@@ -1,0 +1,45 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#abas-principais {
+    margin: 0;
+    padding: 0;
+    width: 720px;
+    list-style: none;
+}
+
+#abas-principais li {
+    float: left;
+    /**A imagem da aba deve estar em um tamanho suficiente apra caber todo o texto.
+       A ponta direita da imagem, está com a cor de acordo com o fundo do site.**/
+    background: url(Assets/aba-direita.png) no-repeat top right;
+}
+
+#abas-principais a {
+    display: block;
+    /** Necessário pois a tag A é um elemento inline, e a imagem
+    bugaria se fosse inline.**/
+    text-decoration: none;
+    padding: 0 2em;
+    line-height: 3em;
+    background: url(Assets/aba-esquerda.png) no-repeat top left;
+    color: white;
+}
+
+#abas-principais a:hover {
+	color: #894a1f;
+}
+
+#abas-principais .atual {
+    background: url(Assets/aba-esquerda-atual.png) no-repeat top right
+    ;
+}
+
+#abas-principais .atual a {
+    background: url(Assets/aba-direita-atual.png) no-repeat top left;
+}
+
+/*Perceba que por ser duas imagens, é necessário que aplique o sistema
+duas vezes utilizando os seteroes da mesma forma que se fez para definir
+a imagem do layout*/
