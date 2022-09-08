@@ -1,0 +1,109 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+/************ LAYOUT FIXO **************/
+
+/** Layout fixo: Conforme você aumenta a largura do seu navegador,
+o layout fixo se mantem em seu tamanho. Se você reduzir demais,
+o layout permanecera no seu tamanho normal e irá desaparecer dependendo
+do tamanho do navegador que você diminuiu, sendo necessário utilizar o
+scroll lateral para ver os layouts. **/
+
+
+#container {
+    width: 720px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+#marca {
+    /* Logo, marca ou navegação*/
+    height: 100px;
+    background: #9e9e9e;
+    line-height: 100px;
+    text-align: center;
+}
+
+#conteudo {
+    width: 520px;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/** O conteudo e o menu de navegação tem um espaçamento de 20 px,
+por isso definimos 720px no container geral. Para que 20px ficassem
+de espaçamento. Por isso, a soma das larguras desses dois blocos,
+da apenas 700px.**/
+
+#conteudo-principal {
+    float: left;
+    width: 320px;
+}
+
+#conteudo-secundario {
+    width: 180px;
+    float: right;
+    background-color: #d1d1d1;
+}
+
+/** Foi aplicado o espaçamento interno desta maneira pois
+se aplicado diretamente a div do conteudo secundario,
+iria diminuir a margin de 20px que deixamos quando definimos
+a largura de ambos os blocos de conteudos. Desta forma, não
+utiliza os 20px de fora, mas sim aplica internamente.**/
+#conteudo-secundario h2, #conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/** Inserindo uma largura de modo que somados de a
+quantidade de pixels do container geral conteudo mas
+que sobre 20px para espaçamento lateral **/
+
+#navegação {
+    width: 180px;
+    float: left;
+    /*padding: 10px;*/
+    background: #d1d1d1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 10px;
+}
+
+#navegação ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navegação a {
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    display: block;
+    background: #f7b600 url(../assets/menu.png) no-repeat left bottom;
+}
+
+#navegação ul a:link, a:visited {
+    color: black;
+}
+
+#navegação ul a:hover {
+    background-position: right bottom;
+    color: white;
+    background-color: #f99200;
+}
+
+
+
+/** Ao criar layouts fixos, você tem muito mais controle sobre a exibição dos conteudos,
+sobre como os usuarios irão ver. Mas, dependendo de alguns sites que você ira criar,
+pode ser mais interessante criar um layout que se adpate melhor a outros dispositivos. **/
