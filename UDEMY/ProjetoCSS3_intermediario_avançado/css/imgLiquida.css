@@ -1,0 +1,160 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+/************ IMAGEM LIQUIDA **************/
+
+/** Mesmo conceito do layout liquido. **/
+
+/** Layout/imagem liquido utiliza porcentagem para definir o tamanho dos seus componentes. **/
+
+#container {
+    width: 86% ; /*720px;*/
+    background: #fff;
+    margin: 0 auto;
+    min-width: 520px;
+    max-width: 830px;
+
+    /* min-widht: Defina uma largura minima de acordo com o tamanho total
+    da div container, de modo que caso a pessoa diminua ate essa largura,
+    os componentes parem de diminuir e so passem a ser vistos rolando a
+    rolagem lateral da pagina.  */
+
+    /* Max-widht: Ao contrario da propiedade anterior, esta propiedade
+    define um tamanho maximo que os componentes do site podem expandir
+    a medida que você aumentar a janela do navegador */
+
+    /*** Essas mesmas propiedades também existem pro caso da altura ***/
+}
+
+#marca {
+    /* Logo, marca ou navegação*/
+    /*Não precisa da conversão pois não tem uma largura definida
+    mas por padrão a div ocupa todo o espaço do container em que está.*/
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    /** Criar uma imagem que possa se misturar com a cor solida de fundo. (#225992), pois assim
+    o usuario acharia que é tudo uma imagem, caso a imagem aumente demais. **/
+    background: #225992 url(../assets/cabecalho2.jpg) center;
+}
+
+
+
+/*** Para saber o valor em porcentagem:
+valor em pixels x 100 > resultado / total = valor em porcentagem
+***/
+
+/* Sempre deixando alguma margin para lateral, neste caso,
+ja definida no tamanho do container. (20px) */
+
+#conteudo {
+    /*valor aredondado. inteiro ->(74.28)*/
+    width: 74%; /*520px;*/
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/** O conteudo e o menu de navegação tem um espaçamento de 20 px, 20px ficam
+de espaçamento. Por isso, a soma das larguras desses dois blocos,
+da apenas 700px.**/
+
+#conteudo-principal {
+    float: left;
+    width: 63% ; /*320px;*/
+}
+
+#conteudo-secundario {
+    width: 34% ; /*180px;*/
+    float: right;
+    background-color: #d1d1d1;
+}
+ 
+img.img-principal {
+    width: 96%;
+    padding: 2%;
+    border: 1px solid red;
+    max-width: 600px;
+    /*definir uma largura maxima para a imagem,
+    com intuito de que ela não perca qualidade
+    a medida que expande. (Considere o tamanho 
+    total da imagem: 600px)*/
+    overflow: auto;
+    /* Overflow: Define qual sera o comportamento do site com conteudos
+    que estouram o limite de suas caixas, podendo escondelos a medida que
+    eles ultrapassam as caixas, colocar uma barra de rolagem entre outras
+    propiedades dessa tag. */
+}
+
+
+/*** onsidere o tamanho total da imagem, levando em conta
+o espaçamento interno que você agregou, lembrando que ele
+aparece em ambos lados, ou seja,  o valor x2, apartir dai
+você deve definir o valor total da imagem respeitando esse
+padding para que na soma de ambos, de 100% de preenchimento
+do espaço dentro de seu container.. ***/
+
+
+/*#imagem {
+    width: 90%;
+    border: 1px solid red;
+    overflow: auto;
+}*/
+
+/** Foi aplicado o espaçamento interno desta maneira pois
+se aplicado diretamente a div do conteudo secundario,
+iria diminuir a margin de 20px que deixamos quando definimos
+a largura de ambos os blocos de conteudos. Desta forma, não
+utiliza os 20px de fora, mas sim aplica internamente.**/
+#conteudo-secundario h2, #conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/** Inserindo uma largura de modo que somados de a
+quantidade de pixels do container geral conteudo mas
+que sobre 20px para espaçamento lateral **/
+
+#navegação {
+    width: 24% ; /*180px;*/
+    float: left;
+    /*padding: 10px;*/
+    background: #d1d1d1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 10px;
+}
+
+#navegação ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navegação a {
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    display: block;
+    background: #f7b600 url(../assets/menu.png) no-repeat left bottom;
+}
+
+#navegação ul a:link, a:visited {
+    color: black;
+}
+
+#navegação ul a:hover {
+    background-position: right bottom;
+    color: white;
+    background-color: #f99200;
+}
+
+

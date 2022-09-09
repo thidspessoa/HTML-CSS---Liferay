@@ -1,0 +1,141 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+/************ LAYOUT LIQUIDO**************/
+
+/** Este tipo de layout se adapta ao tamanho da aba do navegador,
+quanto mais você diminui, o tamanho do site também ira diminuir juntamente
+com seus componentes. Mas você pode definir um ponto em que ele pare de
+diminuir. Este layout preenche de forma “melhorada” o espaçamento dentro do
+browser, mas não é responsivo, pois ele se adapta ao tamanho da tela do navegador,
+mas ate certo ponto e apartir deste ponto so fica possivel ver todos conteudos do
+site com o menu de rolagem lateral. Já o responsivo se adapta ao tamanho do monitor/celular
+do usuario movendo os componentes do site para que fique aparecendo totalmente na tela. **/
+
+/** Layout liquido utiliza porcentagem para definir o tamanho dos seus componentes. **/
+
+#container {
+    width: 85% ; /*720px;*/
+    background: #fff;
+    margin: 0 auto;
+    min-width: 620px;
+    max-width: 800px;
+
+    /* min-widht: Defina uma largura minima de acordo com o tamanho total
+    da div container, de modo que caso a pessoa diminua ate essa largura,
+    os componentes parem de diminuir e so passem a ser vistos rolando a
+    rolagem lateral da pagina.  */
+
+    /* Max-widht: Ao contrario da propiedade anterior, esta propiedade
+    define um tamanho maximo que os componentes do site podem expandir
+    a medida que você aumentar a janela do navegador */
+
+    /*** Essas mesmas propiedades também existem pro caso da altura ***/
+}
+
+#marca {
+    /* Logo, marca ou navegação*/
+    /*Não precisa da conversão pois não tem uma largura definida
+    mas por padrão a div ocupa todo o espaço do container em que está.*/
+    height: 100px;
+    background: #9e9e9e;
+    line-height: 100px;
+    text-align: center;
+}
+
+
+
+/*** Para saber o valor em porcentagem:
+valor em pixels x 100 > resultado / total = valor em porcentagem
+***/
+
+/* Sempre deixando alguma margin para lateral, neste caso,
+ja definida no tamanho do container. (20px) */
+
+#conteudo {
+    /*valor aredondado. inteiro ->(74.28)*/
+    width: 74%; /*520px;*/
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/** O conteudo e o menu de navegação tem um espaçamento de 20 px, 20px ficam
+de espaçamento. Por isso, a soma das larguras desses dois blocos,
+da apenas 700px.**/
+
+#conteudo-principal {
+    float: left;
+    width: 63% ; /*320px;*/
+}
+
+#conteudo-secundario {
+    width: 34% ; /*180px;*/
+    float: right;
+    background-color: #d1d1d1;
+}
+
+/** Foi aplicado o espaçamento interno desta maneira pois
+se aplicado diretamente a div do conteudo secundario,
+iria diminuir a margin de 20px que deixamos quando definimos
+a largura de ambos os blocos de conteudos. Desta forma, não
+utiliza os 20px de fora, mas sim aplica internamente.**/
+#conteudo-secundario h2, #conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/** Inserindo uma largura de modo que somados de a
+quantidade de pixels do container geral conteudo mas
+que sobre 20px para espaçamento lateral **/
+
+#navegação {
+    width: 24% ; /*180px;*/
+    float: left;
+    /*padding: 10px;*/
+    background: #d1d1d1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 10px;
+}
+
+#navegação ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navegação a {
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    display: block;
+    background: #f7b600 url(../assets/menu.png) no-repeat left bottom;
+}
+
+#navegação ul a:link, a:visited {
+    color: black;
+}
+
+#navegação ul a:hover {
+    background-position: right bottom;
+    color: white;
+    background-color: #f99200;
+}
+
+
+/** Nas divs de conteudo e navegação, você precisa
+utilizar uma regra de 3 para saber o valor em porcentagem, do tamanho desses componentes,
+seria algo assim (720 está para 100% assim como 580 está para X), mas você pode utilizar
+uma conta rapida (520+180=700) O valor dos dois componentes multiplicado por 100  e dividido
+pelo total (700, pois 20pixels são para a margin lateral entre as divs.) se você somar o resultado,
+tera 99,99 ou 100, isso significa que os valores que achamos, se somados sao equivalentes ao total: 700.
+O valor pode vir quebrado, então é bom arendodar de forma que você deixe um espaço lateral para não
+ficarem colados e que caibam sem quebrar outros componentes. **/
