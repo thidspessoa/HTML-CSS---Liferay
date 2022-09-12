@@ -1,0 +1,54 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+table {
+    width: 700px;
+    border-collapse: collapse;
+
+    /** Border-collapse: A propiedade ao lado, define
+    se as bordas de uma tabela devem ser compartilhadas/coladas
+    ou separadas. (collapse/separate) **/
+}
+
+th, td {
+    padding: 2em;
+
+}
+
+th {
+    text-transform: uppercase;
+    /* Altera o comportamento padrão do texto,
+    no caso acima deixamos em maiusculo; */
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left;
+    font-size: 90%;
+    letter-spacing: 0.2em;
+    /* Letter-spacing: Define o espaçamento horizontal
+    entre os caracteres de texto. Ou seja, o espaçamento
+    entre cada letra do texto; */
+}
+
+tr.alternancia {
+    background-color: #efefef;
+    /* Utilizar um seletor de classe dentro dos tr`s da tabela,
+    para definir uma alternacia de cores de linha entre os dados,
+    isso ajuda a facilitar a leitura desta tabela e de seus dados: */
+
+}
+
+.numero {
+    text-align: right;
+    /* Formatar numeros para que você tenha uma vizualização mais interessante,
+    alinham-se a direita, pois caso você tenha numeros muito grandes, fica mias
+    facil de vizualizalos, essa são as convenções. Normalmente em tabelas nos
+    iremos alinhar numeros que podem ter valores muito altos, a direita. */
+}
+
+tr:hover {
+    background-color: #c3e6e5;
+    /* Criar um efeito de cor quando o usuario passar o mouse
+    em cima de uma linha da tabela, isso ajuda a leitura caso
+    a tabela seja muito grande: */
+}
