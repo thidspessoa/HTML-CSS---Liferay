@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title> Estilizando de Formulários </title>
+        <meta charset="utf-8">
+
+        <!--Estilo customizado -->
+        <link rel="stylesheet" type="text/css"
+        href="css/estilizandoForms.css">
+
+    </head>
+
+    <body>
+
+
+        <h1>Estilizando Formulários</h1>
+
+        <form> <!--Tag de abertura de formulário-->
+
+            <fieldset id="DetalhesContato">
+                <!--Fieldset define um bloco de conteudos relacionados
+                dentro do formulário.-->
+
+                <legend>Detalhes de contato:</legend>
+                <!--Legend adiciona um "titulo" a fieldset,
+                dando um nome aquel bloco de conteudos que fica
+                visivel ao usuario-->
+
+                <label for="nome">Nome</label>
+                <input placeholder="Digite seu nome.." id="nome"
+                name="Nome">
+                <!--Input é um elemento de entrada de dados no 
+                formulário, aonde o usuário insere informações.
+                Você define qual será o tipo do contéudo de entrada
+                com a propiedade type, e caso você não defina,
+                por padrão o type será "text"-->
+
+                <label for="email">Email</label>
+                <input placeholder="Digite seu email.." id="nome"
+                name="email">
+                <!--Placeholder adiciona uma mensagem no campo
+                de digitação mas que desaparece aassim que o usuário
+                insere algum dado.-->
+
+                <label for="URL">URL</label>
+                <!--Label adiciona uma etiqueta a algum input,
+                ou seja, um titulo de algum input. Ajuda seu formulário 
+                ser mais acessivel pois os leitores de tela leem esse elemento.-->
+                <input placeholder="Insira a URL.." id="nome"
+                name="URL" type="url">
+                <!--Name serve para indentificar campos de inputs
+                do formulário, ele serve para identificar as informções
+                preenchidas sempre que dermos um submit deste formulário.-->
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Cometários:</legend>
+
+                <label for="Comentário">Mensagem</label>
+                <textarea placeholder="Digite seu comentário.." id="Comentário"
+                name="ComentárioUsuario"></textarea>
+                <!--Area de digitação de paragrafos de textos.-->
+
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>Termos de uso</legend>
+
+                <div>
+                    <label for="sim">
+                        <input type="radio" name="Aceita"  
+                        id="sim" value="sim">Sim
+                    </label>
+                </div>
+
+                <div>
+                    <label for="não">
+                        <input type="radio" name="Aceita"
+                        id="não" value="não">Não
+                        <!--Aqui é importante frisar que radio buttons precisam
+                        ter os mesmos atributos names, para que seja possivel
+                        escolher apenas uma opção-->
+                    </label>
+                </div>
+
+
+            </fieldset>
+
+
+        </form> <!--Tag de fechamento de formulário-->
+
+ 
+    </body>
+
+</html>
