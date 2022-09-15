@@ -1,0 +1,74 @@
+.caixa {
+    width: 400px;
+    /* Tamanho correspondente ao da imagem
+    de fundo.*/
+    
+    background: #dedede url(../AssetsArredondamentoIMG/fundo-arredondamento.png) repeat-y left top;
+    /* Com repeat-y ele repete na vertical*/
+}
+
+.caixa h2 {
+    padding: 10px 20px 0 20px;
+    background: url(../AssetsArredondamentoIMG/topo2.png) no-repeat left top;
+}
+
+.caixa p {
+    padding: 0 20px;
+}
+
+.caixa .ultimo {
+    background: url(../AssetsArredondamentoIMG/baixo2.png) no-repeat left bottom;
+    padding-bottom: 20px;
+    /** Aplicamos uma classe no ultimo paragrafo, para podermos utilizar a ultima imagem.
+    Isso também faz com que se aumentarmos a quantidade de conteudos dentro da caixa,
+    ela irá crescer uniformemente. **/
+}
+
+
+
+
+
+
+
+
+
+
+
+/***
+.caixa h2 {
+    padding: 10px 20px 0 20px;
+    Para centralizar dentro da caixa, o conteudo, pois
+    se aplicarmos diretamente nela, a caixa quebra.
+}
+
+.caixa p {
+
+     Selcionamos outro elemento dentro de caixa,
+    para poder aplicar a parte de baixo da imagem.
+
+
+    background: #dedede url(../AssetsArredondamentoIMG/baixo.png) no-repeat left bottom;
+    
+    
+    padding: 0px 20px 20px 20px;
+    Para centralizar dentro da caixa, o conteudo, pois
+    se aplicarmos diretamente nela, a caixa quebra.
+}
+***/
+
+
+
+
+
+
+/***** Sobre as imagens de fundo ****/
+
+/** para montar essa caixa com imagens de fundo, precisariamos
+utilizar um background aplicando a cor das imagens num elemento central,
+e em outros dois elementos colocariamos as imagens superiores e inferiores.
+**/
+
+/** pro caso de uma caixa com um efeito de borda especial, por exemplo,
+não poderiamos utilizar um background color para preencher
+a cor do meio, pois ficaria disforme com as imagens superiores e inferiores
+nesse caso então, você precisaria utilizar 3 imagens, topo, baixo e meio.**/

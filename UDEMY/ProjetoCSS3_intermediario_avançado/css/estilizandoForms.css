@@ -1,10 +1,38 @@
-label {
-    display: block;
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
-input {
+fieldset {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    /* Altera o icone do mouse quando o usuario passa
+    por cima deste elemento.*/
+}
+
+input [type="text"] {
+    /* Seletor de atributos usado para definir que apenas 
+    os elementos do tipo texto irão receber as alterações abaixo. */
     width: 20em;
 
 }
 
+textarea {
+    width: 20em;
+    height: 10em;
+}
 
+.radio {
+    margin-right: 1em;
+}

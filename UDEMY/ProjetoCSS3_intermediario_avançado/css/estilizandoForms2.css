@@ -1,0 +1,73 @@
+/* Estilizando formulários parte 2 */
+
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #643d87 url(../Assets_estilizando_forms/fundo.jpg) no-repeat top center;
+
+}
+
+#container {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    /*configuraçoes de prefixo */
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+    /* Para centralizar os conteudos dentro de container*/
+}
+
+#container img {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+input {
+    height: 40px;
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 40px;
+    /* para poder encaixar os icones*/
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    /* Para configurar os icones dentro dos inputs de email e senha.
+    Utilizei aqui, pois dessa forma não precisariamos definir esses 
+    mesmos atributos em cada input abaixo, definindo aqui, já configuramos
+    para ambos os inputs.*/
+}
+
+input[type="submit"] {
+    width: 50%;
+    padding-left: 0;
+    margin-top: 4%;
+    color: #fff;
+    background-color: #f79300;
+    border: 2px solid #db7d00;
+    cursor: pointer;
+
+    /* Fazer um degrade vertical dentro do botao*/
+    background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+    background: linear-gradient(to bottom, #faa600, #f68a00);
+}
+
+
+/* criar classe para poder formatar senha e email*/
+
+input#email {
+    background-image: url(../Assets_estilizando_forms/icone-usuario.png);
+}
+
+input#senha {
+    background-image: url(../Assets_estilizando_forms/icone-cadeado.png);
+}
