@@ -1,0 +1,17 @@
+@font-face {
+/* É desta maneira que utilizamos uma fonte customizada.*/
+    font-family: "Black Board";
+    /* Ao definir uma fonta, você coloca o nome dela entre as aspas
+    caso seja um nome unico não precisa das aspas, mas
+    casp seja um nome composto é recomendado colocar 
+    como está acima.*/
+    src: url("../Fontes/BlackBoard.woff");
+    /* Aqui você definie o caminho para sua fonte.*/
+
+}
+
+h1 {
+    font-size: 6em;
+    font-family: "Black Board";
+    /* Para utilizar a sua fonte, você precisa referencia-la.*/
+}

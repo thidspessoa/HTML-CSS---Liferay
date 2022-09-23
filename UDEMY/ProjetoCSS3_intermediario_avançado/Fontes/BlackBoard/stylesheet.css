@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BlackBoard';
+    src: url('BlackBoard.woff2') format('woff2'),
+        url('BlackBoard.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
