@@ -55,7 +55,8 @@ document.write(texto)
 /* O documento na verdade é um objeto que representa o DOM. 
 Todos os elementos HTML criados na pagina estão contidos dentro 
 do elemento document.*/
-/*O .write é um metodo, que permite escrever valores dentro do browser*/
+/*O .write é um metodo, que permite escrever valores dentro do
+browser*/
 
 
 console.log (numeroInteiro)
