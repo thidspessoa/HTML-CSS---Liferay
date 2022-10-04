@@ -1,0 +1,46 @@
+/<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title> Operadores Aritimeticos </title>
+        <meta charset="utf-8">
+
+        <!--Estilo customizado -->
+        <link rel="stylesheet" type="text/css"
+        href="">
+
+        <script> 
+            
+           var num1 = 9
+           var num2 = 2
+           
+           document.write('A soma entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 + num2) + '<br>' + '<hr>')
+           /*Os parenteses servem justamente para estabelecer uma precedencia
+           quando o interpretador do java script localiza uma instrução, que pode
+           ser uma operação aritmetica ou uma concatenação, ele vai procurar por instruções
+           dentro de parenteses para que essas instruções sejam interpretadas primeiro.
+           Ou seja, acima, primeiro ele irá resolver a operação aritimetica retornando
+           o resultado e logo apos ira concatenar com a string.*/
+
+           document.write('A subtração entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 - num2) + '<br>' + '<hr>')
+           document.write('A multiplicação entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 * num2) + '<br>' + '<hr>')
+           document.write('A divisão entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 / num2) + '<br>' + '<hr>')
+           document.write('Um módulo entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 % num2) + '<br>' + '<hr>') 
+           // O modulo é responsavel por SEMPRE retornar o resto INTEIRO de uma divisão
+           /*Ele considera que a divisão de 9 por 2 é 1, pois ele divide o valor (9 / 2 = 4,5)
+           e esses dois meios que sobram, o modulo considera eles e retorna para gente,
+           dando um no total. Mas se caso essa divisão não tivesse um numero fracionado,
+           por exemplo: 10/5, o resultado do modulo seria 0, pois essa divisão
+           não teria um resto.*/
+
+        </script>
+
+    </head>
+
+    <body>
+        
+
+    </body>
+
+    
+</html>
