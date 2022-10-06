@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title> Operadores Aritimeticos </title>
+        <meta charset="utf-8">
+
+        <!--Estilo customizado -->
+        <link rel="stylesheet" type="text/css"
+        href="">
+
+        <script src="../Java Script/Assets/Funcoes.js"></script>
+        <script>
+            // Pratica
+
+            /*function calcularAreaTerreno ( largura, comprimento ) {
+                //VOID
+                var area = largura * comprimento 
+                
+                //Continua sendo do tipo void, apenas execução pois nenhum retorno esta sendo dado a quem fez a chamada.
+                document.write('O terreno possui ' + area + ' metros quadrados')
+
+            }
+
+            // chamada da função
+            calcularAreaTerreno(15, 25)*/
+
+
+            function calcularAreaTerreno ( largura, comprimento ) {
+                //RETURN
+                var area = largura * comprimento 
+
+                //o valor de retorno pode ser uma string pre-definida, pode ser um valor booleano pre-definido,  pode ser um number ou uma variavel.
+                return area
+
+            }
+
+            var largura = prompt('Digite a largura: ')
+            var comprimento = prompt('Digite o comprimento: ')
+
+            var largura = parseFloat(largura)
+            var comprimento = parseFloat(comprimento)
+            /* A fim  de evitar possiveis bugs futuros, fizemos o casting
+            dos dados pois como foram recebidos vai prompt, eles por padrão são
+            strings, mesmo o java script tendo inteligencia para fazer a multiplicação
+            que está dentro da função  utilizando uma versão numerica deste dados,
+            é importante a conversão para evitar que haja qualquer bug futuro no nosso codigo
+            ja que existem as concatenações utilizando os operadores de soma.*/
+
+            /* As funções quando possuem retorno, ele pode ser associado a uma variavel no script que faz a chamada dessa função
+            de tal modo que o retorno da função é atribuido a variavel no escopo da chamada.  */
+            var area = calcularAreaTerreno(largura, comprimento)
+            /* Aqui nos criamos uma variavel area, (ja que a variavel area anterior nao existe dentro do corpo, apenas dentro da função)
+            e armazenamos dentro dela o valor que queremos inserir dentro da nossa função,
+            isso significa que poderiamos criar varias variaveis e armazenar valores dentro dela
+            chamando  nossa função  e correlacionando esses valores com a função, e sempre
+            que chamarmos a variavel ela ira retornar o calculo que esta dentro da função.*/
+            /** Outro detalhe importante é que os valores inseridos para os parametros de uma função
+            podem ser recebidos de metodo externo, com interação com o usuario, mas seria necessario
+            haver uma interface permitindo essa interação, de varias formas:
+            banco de dados, prompt, recuperação de dados atravez dos elementos HTML, requisições HTTP.**/
+
+            // chamada da função
+            document.write('O terreno possui ' + area + ' metros quadrados')
+            /* O nosso script que faz a chamada da função é responsavel por formatar a saida desse calculo pro usuario.*/
+            /* Se dependendo do contexto o tipo de tratamento do resultado de uma função for diferenciada, é interessante que 
+            você utilize o return para tratar essas diferenças em quem faz a chamada. */
+
+
+        </script>
+
+    </head>
+
+    <body>
+        
+
+    </body>
+
+    
+</html>
