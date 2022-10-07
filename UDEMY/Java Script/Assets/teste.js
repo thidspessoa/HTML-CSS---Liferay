@@ -21,7 +21,7 @@ document.write( x + y )
 
 // Switch
 
-var narciso = 'abigail'
+/*var narciso = 'abigail'
 
 switch (narciso) {
     case 1:
@@ -32,5 +32,21 @@ switch (narciso) {
         document.write('barbieGirl') 
         break
 }
+*/
 
+
+
+
+// Função 
+
+
+function calcularAreaTerreno(largura, comprimento) {
+
+    largura = 10
+    comprimento = 20
+
+    var area = largura * comprimento
+
+    return area 
+}
 

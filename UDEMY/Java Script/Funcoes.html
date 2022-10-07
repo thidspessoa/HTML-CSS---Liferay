@@ -2,7 +2,7 @@
 <html lang="pt-br">
     
     <head>
-        <title> Operadores Aritimeticos </title>
+        <title> Funções </title>
         <meta charset="utf-8">
 
         <!--Estilo customizado -->
@@ -26,7 +26,7 @@
             calcularAreaTerreno(15, 25)*/
 
 
-            function calcularAreaTerreno ( largura, comprimento ) {
+            /***function calcularAreaTerreno ( largura, comprimento ) {
                 //RETURN
                 var area = largura * comprimento 
 
@@ -49,7 +49,7 @@
 
             /* As funções quando possuem retorno, ele pode ser associado a uma variavel no script que faz a chamada dessa função
             de tal modo que o retorno da função é atribuido a variavel no escopo da chamada.  */
-            var area = calcularAreaTerreno(largura, comprimento)
+            /***var area = calcularAreaTerreno(largura, comprimento)
             /* Aqui nos criamos uma variavel area, (ja que a variavel area anterior nao existe dentro do corpo, apenas dentro da função)
             e armazenamos dentro dela o valor que queremos inserir dentro da nossa função,
             isso significa que poderiamos criar varias variaveis e armazenar valores dentro dela
@@ -61,11 +61,22 @@
             banco de dados, prompt, recuperação de dados atravez dos elementos HTML, requisições HTTP.**/
 
             // chamada da função
-            document.write('O terreno possui ' + area + ' metros quadrados')
+            /***document.write('O terreno possui ' + area + ' metros quadrados')
             /* O nosso script que faz a chamada da função é responsavel por formatar a saida desse calculo pro usuario.*/
             /* Se dependendo do contexto o tipo de tratamento do resultado de uma função for diferenciada, é interessante que 
             você utilize o return para tratar essas diferenças em quem faz a chamada. */
 
+            function soma(a, b) {
+                b = b === undefined ? 0 : b // Deste modo evitamos ter o valor como undefined
+                return a + b
+            }
+
+            console.log(soma(7,7))
+            console.log(soma(9,10, 9, 15)) // o JS desconsidera os parâmetros adicioanis pois o recebimento deles não é previsto.
+            console.log(soma(8)) // return 8 + undefined = not a number
+            console.log(soma()) // undefined + undefined = not a number
+
+            // podemos recbeer quantos parametros forem necessarios.
 
         </script>
 

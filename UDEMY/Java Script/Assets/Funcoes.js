@@ -8,7 +8,7 @@ Declaração de funções
 
 
 // Comando para iniciar funções + nome da função + parametros/argumentos
-function calcularAreaTerreno(largura, comprimento) {
+/*function calcularAreaTerreno(largura, comprimento) {
 /*Sobre a definição de nomes de funções: Geralmente é indicado o uso 
 de duas palavras combinadas, sendo a primeira palavra um verbo no infinitivo
 e a segunda um substantivo iniciada com letra maiuscula (camellCase).
@@ -16,10 +16,10 @@ Ex: calcularArea, finalizarJogo...*/
 /*Parametros funcionam como uma entrada de dados para uma função. 
 Nos podemos não passar nenhum parametro ou mesmo passar quantos parametros
 desejarmos basta separalos por virugla. Vale ressaltar que os parametros são variaveis.*/
-    var area = largura * comprimento
+/*    var area = largura * comprimento
 
     return area 
-}
+}*/
 
 /*Dentro do escopo de uma função podemos criar variaveis, criar estruturas de repetição
 estrutura condicionais. Ou seja, podemos utilizar todos os recursos da linguagem de promgramação
@@ -86,3 +86,30 @@ interagiri de modo a inserir valores dentro de uma função ou puxar valores. **
 /**************Funções não precisam necessáriamente serem declaradas antes de serem
 chamadas. Pois quando o interpretador do JS vai ler o script, ele
 procura em primeiro lugar as funções para depois ler o codigo.*************/
+
+
+
+
+
+
+/********************
+PARAMETROS 
+*********************/
+/*No java script, os parametros são bem flexiveis, isso significa que
+os parametros de uma função não necessariamente precisam ser passados.
+Em termos de quantidade de parametros no JS, podemos definir que uma função
+recebera dois parametros mas eu posso passar um parametro ou nenhum parametro
+sem que isso de um erro na aplicação */
+
+
+
+/************ Fução sem parametros**************/
+
+function calcularAreaTerreno() {
+    var largura = 10
+    var comprimento = 20
+
+    return (largura*comprimento) 
+}
+
+console.log(calcularAreaTerreno())

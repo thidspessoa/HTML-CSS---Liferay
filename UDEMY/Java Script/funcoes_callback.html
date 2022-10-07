@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title> Funções de CallBack </title>
+        <meta charset="utf-8">
+
+        <!--Estilo customizado -->
+        <link rel="stylesheet" type="text/css"
+        href="">
+
+        <script src="../Java Script/Assets/Funcoes.js"></script>
+        
+        <!--Script 2-->
+        <script>
+
+            function exibirArtigo (id, callbackSucesso, callbackErro) {
+                //lógica: recuperar o id via requisição http
+                if (true) {
+                    callbackSucesso('Funções de callback em JS', 'Funções de callback são muito utilizadas...')
+                    
+                } else {
+                    callbackErro(' Erro ao recuperar os dados')
+                }
+            }
+
+            var callbackSucesso = function(titulo, descricao){
+                document.write('<h1>' + titulo + '</h1>')
+                document.write('<hr>')
+                document.write('<p>' + descricao + '</p>')
+            }
+            //Encapsular as funções anonimas dentro de variaveis (wrarpper) e encaminhar essas variaveis como sendo referencia para as funções
+            var callbackErro = function(erro){
+                document.write('<p><b>Erro:</b>' + erro + '</p>')
+
+            }
+
+            exibirArtigo(1, callbackSucesso, callbackErro)
+            /*Declaramos a função ja dentro da chamada, pois funções de callback são anonimas.*/
+
+            /*Criamos a função exibir artigo; e duas funções de callback;
+            (sendo que na pratica haveria uma logica para recuperar um artigo com base no ID) e ai nos
+            teriamos uma condição para saber se houve ou não sucesso na recuperação; havendo sucesso
+            nos recuperariamos a função callback sucesso passando o titulo e a descrição (o que é esperado nessa função);
+            caso desse algum problema nos encaminhariamos o erro que é esperado na função de callback de erro;
+            como nos estamos forçando true naturalmente iremos entrar na função de callback sucesso; e ai a função
+            de callback sucesso tem a logic para fazer a impressão de instruções HTML na pagina (ela não tem return, assim como a função erro, portanto são funções void);
+            */
+
+
+        </script>
+
+    </head>
+
+    <body>
+        
+
+    </body>
+
+    
+</html>
