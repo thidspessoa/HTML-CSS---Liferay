@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <title> Funções nativas para manipular strings </title>
+        <meta charset="utf-8">
+
+        <!--Estilo customizado -->
+        <link rel="stylesheet" type="text/css"
+        href="">
+
+        <script src="../Java Script/Assets/manipularStrings.js"></script>
+        
+        <!--Script 2-->
+        <script>
+
+            //propiedade lenght
+            /* Permite que possa ver a quantidade de caracteres de uma string. Isso
+            é legal pois apartir dela nos podemos testar o tamanho da string e tomar
+            uma decisão, como por exemplo: Truncar a string ou seja, cortar a string
+            para ajustar o texto dentro de uma area especifica da pagina sem quebrar
+            o layout.*/
+
+            document.write('Jorge Sant Ana'.length)
+            /* Quando o JS interpretar essa string, ele ira converter esse texto puro
+            em um objeto, e ai internamente o JS possui uma serie de atributos e metodos
+            para esse objeto.*/
+
+            document.write('<br>')
+
+            //metodo charAt
+            document.write('Jorge Sant Ana'.charAt(13))
+            /* Retorna um caracter de acordo com seu numero de sua posição
+            na cadeia de caracteres. Nos encaminhammos um determinado indice,
+            e o charAt retorna o caractere contido dentro desse indice.*/
+
+            document.write('<br>')
+            var nome = ' Jorge Sant Ana '
+
+            //metod indexOff
+            document.write(nome.indexOf('a'))
+            /* Retorna a posição da primeira ocorrência de um valor especifico dentro
+            da string. Nesse caso é encaminhar um caractere especifico e ai o indexOff
+            ira retornar a posição daquele caractere na sua primeira ocorrencia dentro da string
+            ou seja, o index(no indice) relativo a primeira vez que aparece aquele caractere; */
+            /*Atenção pois o indexOf faz diferenciação entre letras maiusculas e minusculas.*/
+
+            document.write('<br>')
+
+            // metodo replace
+            document.write(nome.replace('Sant Ana', 'Silva'))
+            /*Permite com base em um valor de pesquisa e também em um outro valor de
+            modificação, substituir textos dentro de uma string.*/
+            /*O replace espera o valor a ser pesquisado e substitui pelo valor
+            inserido, caso o valor pesquisado exista.*/
+
+            document.write('<br>')
+
+            // metodo substr
+            document.write(nome.substr(6, 4))
+            /*Este metodo permite estrair parte de uma string com base em uma posição
+            incial, seguida de um valor que representa a quantidade de caracteres a frente
+            dquela posição inicial. Então é como se recortasse umap parte da string.*/
+            /*Apartir da posiçãi inicial 6, quantos caracteres a frente eu quero
+            recuperar, incluindo o 6 é claro(dentro dos 4 numeros, um deles é o propio 6
+            ja que o numero inicial define apenas o ponto de partida e não o primero numero
+            a ser recuperado.). Ele ira retornar apenas estes caracteres
+            selecionados.*/
+
+            document.write('<br>')
+
+            //Metodo toLowerCase
+            document.write(nome.toLowerCase())
+            /*Converter todos os caracteres de uma string para caixa baixa, minusculo.*/
+
+            document.write('<br>')
+
+            //Metodo toUpperCase
+            document.write(nome.toUpperCase())
+            /*Converte todos os caracteres de uma string em caixa alta, maiusculo.*/
+
+            document.write('<br>')
+
+            //Metodo trim
+            document.write('-' + nome.trim() + '-')
+            /*Remove os espaços em branco das extremidades de uma string.*/
+
+        </script>
+
+    </head>
+
+    <body>
+        
+
+    </body>
+
+    
+</html>

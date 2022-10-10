@@ -11,7 +11,7 @@ function () {
 
 
 // Wrapper
-/*A capacidade associar a variaveis funções. A nossa variavel
+/*A capacidade de associar a variaveis funções. A nossa variavel
 passou a guardar uma referencia a função.*/
 
 var exibirSaudacao = function(nome) {
