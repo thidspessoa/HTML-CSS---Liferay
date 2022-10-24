@@ -61,4 +61,73 @@ document.write(data.toString())
 data.setFullYear(data.getFullYear() * 2)
 document.write('<hr>')
 document.write(data.toString())
+/*Precisamos chamar esta data novamente, mas agora ja com as edições
+Inclusas pois o metodo set apenas edita um determinado valor,
+mas não retorna em tela ele.*/
 
+document.write('<br>')
+document.write('<br>')
+document.write('<br>')
+document.write('<br>')
+document.write('<br>')
+document.write('<hr>')
+document.write('<br>')
+document.write('<br>')
+document.write('<br>')
+document.write('<br>')
+document.write('<br>')
+document.write('<hr>')
+
+
+
+//Somar datas
+
+//15/12/2028
+var date1 = new Date (2028, 11, 15) 
+
+//24/02/2022
+var date2 = new Date (2022, 1, 24)
+
+document.write(date1.toString())
+document.write('<hr>')
+document.write(date2.toString())
+
+document.write('<br> <br> <br> <hr>')
+
+
+// Converter datas para algo que possa ser calculado
+document.write(date1.getTime())
+document.write('<hr>')
+document.write(date2.getTime())
+
+/*O metodo get time recupera a quantidade de milissegundos entre
+as datas de: 1 de janeiro de 1970 ate a data em questão.*/
+
+document.write('<br> <br> <br> <hr>')
+
+// Encontrar a qtde de milissegundos entre date1 e date2
+var milissegundos_entre_datas = Math.abs(date1.getTime() - date2.getTime())
+document.write(milissegundos_entre_datas)
+/*Utilizamos o metodo math abs pois precisamos converter este valor
+negativo em positivo, é exatamente isso que o metodo faz, converte
+ao valor absoluto dele mesmo.
+Isso foi necessário pois como vamos mostrar a diferença de dias entre
+um ano e outro, normalmente não dizemos em valor negativo
+mas sim em valor inteiro. */
+
+
+document.write('<hr>')
+
+
+// 1 dia tem 24h, cada hora tem 60 minutos, 
+//cada minuto tem 60 segundos, 
+//cada segundo tem 1000 milissegundos
+//então quantos milissegundos existem em um dia?
+var milissegundos_por_dia = (1*24*60*60*1000)
+document.write(' 1 dia tem: ' + milissegundos_por_dia + ' milissegundos')
+
+
+document.write('<br> <br> <br> <hr>')
+
+//Divisão da diferença de milissegundos pelos milissegundos existentes em um dia
+document.write('A diferença entre date1 e date2 é de: ' + milissegundos_entre_datas / milissegundos_por_dia + ' dia(s).')

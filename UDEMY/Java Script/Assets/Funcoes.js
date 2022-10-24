@@ -111,5 +111,5 @@ function calcularAreaTerreno() {
 
     return (largura*comprimento) 
 }
-
+d
 console.log(calcularAreaTerreno())
