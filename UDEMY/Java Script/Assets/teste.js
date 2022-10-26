@@ -39,7 +39,7 @@ switch (narciso) {
 
 // Função 
 
-
+/*
 function calcularAreaTerreno(largura, comprimento) {
 
     largura = 10
@@ -49,4 +49,22 @@ function calcularAreaTerreno(largura, comprimento) {
 
     return area 
 }
+*/
 
+/*
+function teste (num1,num2) {
+    var versales = num1 + num2
+    return document.write(versales)
+}
+
+teste (2,2)
+*/
+
+/*
+function test (um, dois) {
+    var resultado = um - dois
+    console.log (resultado)
+}
+
+test(10, 5)
+*/
